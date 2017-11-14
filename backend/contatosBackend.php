@@ -21,7 +21,7 @@ if(isset($_COOKIE['api_contatos'])){
 		$indice = $_GET['id']-1;
 		$contato = isset($array_contatos[$indice]) ? $array_contatos[$indice] : 'Esse contato não existe';
 		echo json_encode($contato);
-	}else{		
+	}else{
 	  echo json_encode($array_contatos);
 	}
 }
