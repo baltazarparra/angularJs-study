@@ -10,23 +10,23 @@
   <link rel="stylesheet" href="css/ui.css">
 	<script src="lib/angular/angular.js"></script>
 	<script src="lib/angular/angular-messages.js"></script>
+  <script src="lib/serialGenerator/serialGenerator.js"></script>
+  <script src="lib/ui/ui.js"></script>
   <script src="js/app.js"></script>
   <script src="js/controllers/listaTelefonicaCtrl.js"></script>
   <script src="js/services/contatosAPIFactory.js"></script>
   <script src="js/services/operadorasAPIService.js"></script>
-  <script src="js/services/serialGeneratorProvider.js"></script>
   <script src="js/config/serialGeneratorConfig.js"></script>
   <script src="js/value/configValue.js"></script>
   <script src="js/filters/nameFilter.js"></script>
   <script src="js/filters/ellipsisFilter.js"></script>
   <script src="js/directives/uiAlertDirective.js"></script>
   <script src="js/directives/uiDateDirective.js"></script>
-  <script src="js/directives/uiAccordionDirective.js"></script>
 </head>
 <body ng-controller="listaTelefonicaCtrl">
 	<div class="jumbotron">
 
-    <!-- Diretiva accordion criada -->
+    <!-- Module Ui -->
 
     <!-- <ui-accordions>
       <ui-accordion title="Accordion 1">
@@ -37,7 +37,6 @@
       </ui-accordion>
     </ui-accordions> -->
 
-    <hr/>
 		<input class="form-control" type="text" ng-model="criterioDeBusca" placeholder="O que você está buscando?"/>
 		<table ng-show="contatos.length > 0" class="table table-striped">
 			<tr>
